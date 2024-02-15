@@ -26,10 +26,18 @@ A `WCResult` is a class which contains the three Long number created when a text
 A `FrequencyMap` is a class which is a POJO that contains a map of the things tracked as a key (a String in this case),
 and the number of times it appears in the input.
 
-Input like "The Blue Fox is blue" would produce a map like
+Input like `The Blue Fox is blue.` would produce a map like
 
-|+++++++|+++|
-|the|1|
-|blue|2|
-|fox|1|
-|is|1|
+| Word | Count |
+|------|-------|
+| the  | 1     |
+| blue | 2     |
+| fox  | 1     |
+| is   | 1     |
+
+The class would also have a method `public double frequency(String word)` which returns the relative frequency of the 
+word in the input text.
+So `frequency("blue")` would return 0.4 as a result.
+This means you need to track the total number of words in the input, 
+as frequency is `numberOfOccurences / totalNumberOfWords`
+

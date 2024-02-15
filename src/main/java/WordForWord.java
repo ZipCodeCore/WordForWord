@@ -22,8 +22,10 @@ package src.main.java;
 
 public class WordForWord {
 
-    // You'll need to setup a series of instance variables for the phases of processing
+    // You'll need to setup some instance variables for the phases of processing
     // you need to do on the text in the file(s).
+    // And where SHOULD those POJO classes go? Inner classes? Separate public classes?
+    // The decision depends on how you envision using the methods in this class.
 
 
     public static void main(String[] args) {
